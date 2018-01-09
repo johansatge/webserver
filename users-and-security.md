@@ -21,7 +21,7 @@ On your machine, create a SSH key for the user and add it on the server:
 
 ```shell
 $ ssh-keygen -t rsa
-$ ssh-copy-id ~/.ssh/the_key.pub user@host
+$ ssh-copy-id -i ~/.ssh/the_key.pub user@host
 ```
 
 ## Firewall configuration
