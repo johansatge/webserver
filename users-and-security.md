@@ -53,13 +53,12 @@ $ sudo nano /etc/fail2ban/jail.local
 The `ssh` section should look like this:
 
 ```shell
-[ssh]
+[sshd]
 
-enabled  = true
-port     = ssh
-filter   = sshd
-logpath  = /var/log/auth.log
-maxretry = 6
+enabled = true
+port    = ssh
+logpath = %(sshd_log)s
+max_retry = 6
 ```
 
 Then, check the status of the service:
