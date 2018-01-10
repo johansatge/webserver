@@ -12,6 +12,9 @@ $ echo "export APACHE_ENV='dev'" | sudo tee -a /etc/apache2/envvars
 # (/media/sf_www or /var/www)
 # This will be used in the virtual hosts file
 $ echo "export APACHE_DOCUMENT_ROOT='/media/sf_www'" | sudo tee -a /etc/apache2/envvars
+# Add an index for the default virtual host
+$ rm -rf /var/www/html
+$ echo "<h1>It works</h1>" | sudo tee -a /var/www/index.html
 ```
 
 Add [apache2.conf](conf/apache2.conf) in `/etc/apache2`:
