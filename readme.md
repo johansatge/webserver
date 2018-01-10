@@ -7,7 +7,7 @@ This document describes the installation of a basic LAMP server, based on an emp
 ## Features
 
 * Apache 2.4
-* PHP 7.1
+* PHP 7.2
 * MySQL 5.7
 * SSL support with [Let's Encrypt](https://letsencrypt.org/)
 * Email support
